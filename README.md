@@ -67,21 +67,6 @@ The microcontroller's program continuously takes measurements, calculates averag
 
 4. **Program the ATmega8:**
    - Use your programmer software to upload the HEX file to the ATmega8 microcontroller.
-
-## Compiling the C Code
-
-1. **Open the Code:**
-   - Open the `main.c` file using a code editor (e.g., Notepad++ or Visual Studio Code).
-
-2. **Review the Code:**
-   - Carefully review the code and make any necessary modifications or customizations.
-
-3. **Compile the Code:**
-   - Use an AVR GCC compiler to compile the code and generate the HEX file. You can use a tool like WinAVR or Atmel Studio for this purpose.
-
-4. **Program the Microcontroller:**
-   - Use an AVR programmer to upload the compiled HEX file to the ATmega8 microcontroller.
-
 ---
 Now, your digital voltmeter and ammeter project is ready to measure voltage and current accurately and display the results on the LCD display.
 
