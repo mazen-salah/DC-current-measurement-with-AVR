@@ -8,7 +8,7 @@ This project demonstrates a basic digital voltmeter and ammeter using an ATmega8
 - LCD display 1602
 - Voltage divider (100 kΩ and 10 kΩ resistors)
 - Current shunt (0.1 Ω)
-- Operational amplifier (op-amp)
+- Operational amplifier (op-amp) [LM358]
 
 ## Voltage Measurement
 Voltage is measured using a voltage divider, ensuring the input voltage doesn't exceed 55V. The measurements are calculated using the ADC and displayed on the LCD.
