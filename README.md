@@ -82,7 +82,8 @@ The microcontroller's program continuously takes measurements, calculates averag
 4. **Program the Microcontroller:**
    - Use an AVR programmer to upload the compiled HEX file to the ATmega8 microcontroller.
 
-Now, your digital voltmeter and ammeter project is ready to measure voltage and current accurately and display the results on the LCD display.
 ---
+Now, your digital voltmeter and ammeter project is ready to measure voltage and current accurately and display the results on the LCD display.
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
