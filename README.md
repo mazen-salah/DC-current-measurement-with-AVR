@@ -10,11 +10,31 @@ This project demonstrates a basic digital voltmeter and ammeter using an ATmega8
 - Current shunt (0.1 Ω)
 - Operational amplifier (op-amp) [LM358]
 
-## Voltage Measurement
-Voltage is measured using a voltage divider, ensuring the input voltage doesn't exceed 55V. The measurements are calculated using the ADC and displayed on the LCD.
+## Voltage Measurement:
 
-## Current Measurement
-Current is measured with a current shunt, amplified by an op-amp, and calculated using the ADC. The results are displayed on the LCD.
+Voltage measurement is done using a voltage divider, which is made up of two resistors: 100 kΩ and 10 kΩ. This divider reduces the voltage so it can be safely measured. The maximum input voltage that can be applied to the voltage divider is 55V, and the formula for calculating the measured voltage is: 
+```
+U = ADC * Uref * K / 1024
+```
+Where:
+- U is the result in Volts
+- ADC is the result of the analog-to-digital conversion
+- Uref is the reference voltage (2.56V)
+- K is the voltage divider coefficient (11 for this setup)
+- 1024 is the 10-bit ADC bit width.
+
+## Current Measurement:
+
+To measure current, a current shunt is used, which creates a small voltage drop proportional to the current. In this setup, the voltage drop is 0.1 V for 1 A and 0.2 V for 2 A. An op-amp is used to amplify this voltage for precise measurement. The op-amp is configured as a non-inverting amplifier with a gain of 10. The formula for calculating the measured current is:
+```
+I = ADC * Uref * K / 1024
+```
+Where:
+- I is the result in Amperes
+- ADC is the result of the analog-to-digital conversion
+- Uref is the reference voltage (2.56V)
+- K is the gain of the op-amp (10 for this setup)
+- 1024 is the 10-bit ADC bit width.
 
 ## Program
 The microcontroller's program continuously takes measurements, calculates average values from 250 samples, and displays the results on the LCD. The code is written in C, providing a beginner-friendly introduction to digital measurement.
