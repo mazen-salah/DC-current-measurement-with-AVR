@@ -1,0 +1,2 @@
+# DC current measurement with AVR
+ This project aims to create a simple digital voltmeter and ammeter using an ATmega8 microcontroller, an LCD display (1602), a voltage divider, a current shunt, and an operational amplifier. It can measure voltage in the range of 0-25V and current from 0-2.5A, displaying the results on the LCD. The program uses the microcontroller's ADC to perform measurements and provide accurate readings. 
