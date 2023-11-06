@@ -12,6 +12,11 @@ This project demonstrates a basic digital voltmeter and ammeter using an ATmega8
 - Current shunt (0.1 Ω)
 - Operational amplifier (op-amp) [LM358]
 
+## Schematic
+<p align="center">
+  <img src="schematic.png" width="350" title="hover text">
+</p>
+
 ## Voltage Measurement
 
 Voltage measurement is done using a voltage divider, which is made up of two resistors: 100 kΩ and 10 kΩ. This divider reduces the voltage so it can be safely measured. The maximum input voltage that can be applied to the voltage divider is 55V, and the formula for calculating the measured voltage is:
