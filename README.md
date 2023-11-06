@@ -1,5 +1,3 @@
-Sure, here's the edited project overview with the MIT license and a button that links to the `main.c` file:
-
 # Digital Volt-Ammeter Project
 
 ![GitHub](https://img.shields.io/github/license/mazen-salah/DC-current-measurement-with-AVR)
@@ -49,7 +47,38 @@ The microcontroller's program continuously takes measurements, calculates averag
 
 [**View Source Code (main.c)**](main.c)
 
+## Uploading the Program
+
+1. **Connect the Programmer:**
+   - Connect your AVR programmer (e.g., USBASP, AVRISP, etc.) to the ATmega8 microcontroller.
+   - Make sure the programmer is correctly connected to your computer.
+
+2. **Open the Project:**
+   - Open the project folder in your AVR Studio.
+
+3. **Compile the C Code:**
+   - In AVR Studio, locate the `main.c` file in the project folder.
+   - Compile the C code to generate the HEX file.
+
+4. **Program the ATmega8:**
+   - Use your programmer software to upload the HEX file to the ATmega8 microcontroller.
+
+## Compiling the C Code
+
+1. **Open the Code:**
+   - Open the `main.c` file using a code editor (e.g., Notepad++ or Visual Studio Code).
+
+2. **Review the Code:**
+   - Carefully review the code and make any necessary modifications or customizations.
+
+3. **Compile the Code:**
+   - Use an AVR GCC compiler to compile the code and generate the HEX file. You can use a tool like WinAVR or Atmel Studio for this purpose.
+
+4. **Program the Microcontroller:**
+   - Use an AVR programmer to upload the compiled HEX file to the ATmega8 microcontroller.
+
+Now, your digital voltmeter and ammeter project is ready to measure voltage and current accurately and display the results on the LCD display.
+You've successfully created a digital voltmeter and ammeter project using an ATmega8 microcontroller. Happy measuring!
+---
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-For more detailed information, please refer to the project's documentation and source code.
